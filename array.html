@@ -1,0 +1,27 @@
+<html>
+<body>
+  <p id ="demo"></p>
+  <p id ="demo1"></p>
+  <p id ="demo2"></p>
+  <p id ="demo3"></p>
+  <p id ="demo4"></p>
+  <p id ="demo5"></p>
+  <script>
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo").innerHTML = fruits.toString();
+
+  var vegetables = ["carrot", "potato", "tomoto", "onion"];
+  document.getElementById("demo1").innerHTML = vegetables.join("*");
+
+  var vegetables = ["carrot", "potato", "tomoto", "onion"];
+  document.getElementById("demo2").innerHTML = vegetables;
+  vegetables.pop();
+  document.getElementById("demo3").innerHTML = vegetables;
+  vegetables.push("chilli");
+  document.getElementById("demo4").innerHTML = vegetables;
+  vegetables.delete("carrot");
+  document.getElementById("demo5").innerHTML = vegetables;
+  
+  </script>
+</body>
+</html>
